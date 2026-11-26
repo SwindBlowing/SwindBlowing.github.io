@@ -47,7 +47,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet.css?v=20261126b">
+  <link rel="stylesheet" href="stylesheet.css?v=20261126c">
 </head>
 <body>
   <header class="topbar">
@@ -129,6 +129,7 @@
         <div class="body">
           <p class="title"><span class="venue v-preprint">arXiv 2026</span>LoopSeek: Decoupling System One Search from System Two Answering for Long Video Understanding</p>
           <p class="authors"><a href="https://aronwang02.github.io/" target="_blank" rel="noopener">Chengzhong Wang*</a>, <strong>Lang Lin*</strong>, <a href="https://xinyangatk.github.io/" target="_blank" rel="noopener">Xinyang Liu</a>, <a href="https://yinyueqin.github.io/" target="_blank" rel="noopener">Yueqin Yin</a>, <a href="https://mingyuanzhou.github.io/" target="_blank" rel="noopener">Mingyuan Zhou</a>, <a href="https://answ.in/" target="_blank" rel="noopener">Shengwei An</a></p>
+          <p class="desc">We propose LoopSeek, which decouples evidence search from answering for long video understanding: non-generative System I agents search a tree of video windows for key frames, and a frozen System II MLLM answers once, raising accuracy from 53.5 to 63.9 (Qwen3-VL-8B) with 32&ndash;80% less GPU time than agentic methods.</p>
           <p class="links">
             <a href="https://arxiv.org/abs/2611.28635" target="_blank" rel="noopener">Paper</a>
             <a href="https://aronwang02.github.io/LoopSeek/" target="_blank" rel="noopener">Project Page</a>
@@ -143,25 +144,19 @@
         <div class="body">
           <p class="title"><span class="venue v-preprint">arXiv 2026</span>Mitigating Backdoors in Masked Diffusion Language Models</p>
           <p class="authors"><a href="https://aronwang02.github.io/" target="_blank" rel="noopener">Chengzhong Wang*</a>, <strong>Lang Lin*</strong>, Shengfang Zhai, Chenru Wang, Daniel Yiming Cao, <a href="https://frankccccc.github.io/" target="_blank" rel="noopener">Sheng-Yen Chou</a>, Jiaheng Zhang, <a href="https://sites.google.com/site/pinyuchenpage/home" target="_blank" rel="noopener">Pin-Yu Chen</a>, <a href="https://answ.in/" target="_blank" rel="noopener">Shengwei An</a></p>
-          <p class="links"><a href="https://arxiv.org/abs/2611.28640" target="_blank" rel="noopener">Paper</a></p>
+          <p class="desc">We present UNMASK, the first defense framework for masked diffusion language models that detects triggered inputs, localizes the trigger tokens and removes the backdoor, cutting the attack success rate from 95% to 1% while largely preserving clean utility.</p>
+          <p class="links">
+            <a href="https://arxiv.org/abs/2611.28640" target="_blank" rel="noopener">Paper</a>
+            <a href="https://github.com/Aronwang02/UNMASK" target="_blank" rel="noopener">Code</a>
+          </p>
         </div>
       </article>
 
       <article class="card">
-        <a class="thumb" href="https://arxiv.org/abs/2602.00388" target="_blank" rel="noopener" aria-label="A Fragile Guardrail on arXiv">
-          <svg viewBox="0 0 160 100" aria-hidden="true">
-            <defs>
-              <linearGradient id="g-guard" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stop-color="#0072b2"/><stop offset="0.5" stop-color="#5b5bd0"/><stop offset="1" stop-color="#b8448b"/>
-              </linearGradient>
-            </defs>
-            <path d="M80 16 L105 25.5 V48 C105 65.5 94.5 77.5 80 84 C65.5 77.5 55 65.5 55 48 V25.5 Z" fill="url(#g-guard)" fill-opacity="0.08" stroke="url(#g-guard)" stroke-width="3.5" stroke-linejoin="round"/>
-            <path d="M83.5 25 L75.5 42.5 L86 49.5 L77.5 70" fill="none" stroke="url(#g-guard)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </a>
+        <a class="thumb" href="https://arxiv.org/abs/2602.00388" target="_blank" rel="noopener"><img src="images/thumb_saferdiffusion.webp" alt="Denoising trajectory of LLaDA-1.5 under a GCG attack: a permissive start is corrected into a refusal in later steps" width="760" height="373" loading="lazy"></a>
         <div class="body">
-          <p class="title"><span class="venue v-conf">ICML Workshop 2026</span>A Fragile Guardrail: Diffusion LLM&rsquo;s Safety Blessing and Its Failure Mode</p>
-          <p class="authors">Zeyuan He*, Yupeng Chen*, <strong>Lang Lin*</strong>, Yihan Wang, Shenxu Chang, Eric Sommerlade, et al.</p>
+          <p class="title"><span class="venue v-conf">ICML Workshop 2026</span>Safer by Diffusion, Broken by Context: Diffusion LLM&rsquo;s Safety Blessing and Its Failure Mode</p>
+          <p class="authors">Zeyuan He*, Yupeng Chen*, <strong>Lang Lin*</strong>, Yihan Wang, Shenxu Chang, Eric Sommerlade, Philip Torr, Junchi Yu, Adel Bibi, Jialin Yu</p>
           <p class="desc">We investigate the mechanism behind the safety blessing of diffusion LLMs, and analyze the scenarios where context-nesting attacks make this mechanism fail.</p>
           <p class="links"><a href="https://arxiv.org/abs/2602.00388" target="_blank" rel="noopener">Paper</a></p>
         </div>
@@ -171,9 +166,13 @@
         <a class="thumb" href="https://arxiv.org/abs/2512.01342" target="_blank" rel="noopener"><img src="images/thumb_internvideonext.webp" alt="InternVideo-Next: an Encoder-Predictor-Decoder framework with a latent world model as the predictor" width="760" height="339" loading="lazy"></a>
         <div class="body">
           <p class="title"><span class="venue v-conf">CVPR 2026</span>InternVideo-Next: Towards General Video Foundation Models without Video-Text Supervision</p>
-          <p class="authors">Chenting Wang, Yuhan Zhu, Yicheng Xu, Jiange Yang, <strong>Lang Lin</strong>, Ziang Yan, et al.</p>
+          <p class="authors">Chenting Wang, Yuhan Zhu, Yicheng Xu, Jiange Yang, <strong>Lang Lin</strong>, Ziang Yan, Yali Wang, <a href="https://shepnerd.github.io/" target="_blank" rel="noopener">Yi Wang</a>, Limin Wang</p>
           <p class="desc">We propose an Encoder-Predictor-Decoder framework that disentangles the predictor as a latent world model from reconstruction, using a conditional diffusion decoder to bridge pixel-level fidelity with semantic abstraction. Trained on unlabeled videos without any text supervision, it achieves SOTA results across video understanding benchmarks.</p>
-          <p class="links"><a href="https://arxiv.org/abs/2512.01342" target="_blank" rel="noopener">Paper</a></p>
+          <p class="links">
+            <a href="https://arxiv.org/abs/2512.01342" target="_blank" rel="noopener">Paper</a>
+            <a href="https://github.com/OpenGVLab/InternVideo/tree/main/InternVideo-Next" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/collections/OpenGVLab/internvideo-next" target="_blank" rel="noopener">Models</a>
+          </p>
         </div>
       </article>
 
@@ -183,7 +182,12 @@
           <p class="title"><span class="venue v-conf">CVPR 2025</span>GLUS: Global-Local Reasoning Unified into A Single Large Language Model for Video Segmentation</p>
           <p class="authors"><strong>Lang Lin*</strong>, Xueyang Yu*, <a href="https://ziqipang.github.io/" target="_blank" rel="noopener">Ziqi Pang*</a>, <a href="https://yxw.web.illinois.edu/" target="_blank" rel="noopener">Yu-Xiong Wang</a></p>
           <p class="desc">We propose a simple yet effective MLLM for language-instructed video segmentation. It emphasizes global-local video understanding and achieves SOTA performance on multiple benchmarks.</p>
-          <p class="links"><a href="https://glus-video.github.io/" target="_blank" rel="noopener">Project Page</a></p>
+          <p class="links">
+            <a href="https://arxiv.org/abs/2504.07962" target="_blank" rel="noopener">Paper</a>
+            <a href="https://glus-video.github.io/" target="_blank" rel="noopener">Project Page</a>
+            <a href="https://github.com/GLUS-video/GLUS" target="_blank" rel="noopener">Code</a>
+            <a href="https://huggingface.co/Swindl/GLUS-A" target="_blank" rel="noopener">Model</a>
+          </p>
         </div>
       </article>
     </section>
