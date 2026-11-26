@@ -237,7 +237,9 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .site-footer > p { margin: 0; padding-top: 16px; border-top: 1px solid var(--border); }
 .site-footer a { color: var(--muted); }
 .visitors { display: flex; justify-content: center; margin: 12px 0 26px; }
-.visitors-map { width: 345px; max-width: 100%; max-height: 270px; overflow: hidden; }
+/* the ClustrMaps widget draws at 345 x 270 (the crop the old homepage used);
+   zoom shows it at about 250 x 195, whatever element it draws with */
+.visitors-map { width: 345px; height: 270px; overflow: hidden; border-radius: 12px; zoom: 0.72; }
 /* no empty gap where the visitor map never draws (blocked or offline) */
 .visitors:not(:has(.visitors-map > :not(script))) { display: none; }
 
