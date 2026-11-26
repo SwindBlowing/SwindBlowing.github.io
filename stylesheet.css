@@ -220,6 +220,9 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .authors strong { color: var(--text); }
 .authors a { color: var(--muted); text-decoration: underline dotted; text-underline-offset: 3px; }
 .authors a:hover { color: var(--accent-hover); }
+/* venue and collaboration chips: their own row under the authors */
+.tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 0 8px; }
+.tags .venue, .tags .collab { margin-right: 0; vertical-align: baseline; }
 /* a name never breaks across lines, hyphenated ones included; lines break between names */
 .authors .au { white-space: nowrap; }
 .desc { margin: 0 0 6px; color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
