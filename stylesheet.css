@@ -211,6 +211,8 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .authors strong { color: var(--text); }
 .authors a { color: var(--muted); text-decoration: underline dotted; text-underline-offset: 3px; }
 .authors a:hover { color: var(--accent-hover); }
+/* a name never breaks across lines, hyphenated ones included; lines break between names */
+.authors .au { white-space: nowrap; }
 .desc { margin: 0 0 6px; color: var(--muted); font-size: 0.9rem; line-height: 1.55; }
 .links { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 0; }
 .links a { padding: 3px 12px; border: 1px solid var(--border); border-radius: 999px; background: var(--card); color: var(--text); font-size: 0.84rem; font-weight: 500; }
