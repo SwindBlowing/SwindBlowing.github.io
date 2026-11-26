@@ -27,6 +27,7 @@
   --chip-jour-bg: #e3f4ee; --chip-jour: #0b7a55;
   --chip-conf-bg: #ecebfb; --chip-conf: #4b48b8;
   --chip-collab-bg: #fdf1df; --chip-collab: #9a4f00; --chip-collab-border: #f1cf9c;
+  --chip-muted-bg: #eef0f3; --chip-muted: #59636e;
 }
 
 /* dark theme: the system setting unless the visitor picked light, or the visitor picked dark */
@@ -57,6 +58,7 @@
     --chip-jour-bg: #0c3124; --chip-jour: #74d9b1;
     --chip-conf-bg: #25244d; --chip-conf: #bcb8ff;
     --chip-collab-bg: #3a2810; --chip-collab: #f6c27c; --chip-collab-border: #6a4a1c;
+    --chip-muted-bg: #262c35; --chip-muted: #a3adb8;
   }
 }
 :root[data-theme="dark"] {
@@ -85,6 +87,7 @@
   --chip-jour-bg: #0c3124; --chip-jour: #74d9b1;
   --chip-conf-bg: #25244d; --chip-conf: #bcb8ff;
   --chip-collab-bg: #3a2810; --chip-collab: #f6c27c; --chip-collab-border: #6a4a1c;
+  --chip-muted-bg: #262c35; --chip-muted: #a3adb8;
 }
 
 * { box-sizing: border-box; }
@@ -210,6 +213,7 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .v-review { background: var(--chip-rev-bg); color: var(--chip-rev); }
 .v-journal { background: var(--chip-jour-bg); color: var(--chip-jour); }
 .v-conf { background: var(--chip-conf-bg); color: var(--chip-conf); }
+.v-muted { background: var(--chip-muted-bg); color: var(--chip-muted); }
 /* who the work was done with: an amber chip beside the venue */
 .collab {
   display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 6px;
