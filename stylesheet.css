@@ -26,6 +26,7 @@
   --chip-rev-bg: #f8e8f1; --chip-rev: #9c3672;
   --chip-jour-bg: #e3f4ee; --chip-jour: #0b7a55;
   --chip-conf-bg: #ecebfb; --chip-conf: #4b48b8;
+  --chip-collab-bg: #fdf1df; --chip-collab: #9a4f00; --chip-collab-border: #f1cf9c;
 }
 
 /* dark theme: the system setting unless the visitor picked light, or the visitor picked dark */
@@ -55,6 +56,7 @@
     --chip-rev-bg: #3a1630; --chip-rev: #f3a6d0;
     --chip-jour-bg: #0c3124; --chip-jour: #74d9b1;
     --chip-conf-bg: #25244d; --chip-conf: #bcb8ff;
+    --chip-collab-bg: #3a2810; --chip-collab: #f6c27c; --chip-collab-border: #6a4a1c;
   }
 }
 :root[data-theme="dark"] {
@@ -82,6 +84,7 @@
   --chip-rev-bg: #3a1630; --chip-rev: #f3a6d0;
   --chip-jour-bg: #0c3124; --chip-jour: #74d9b1;
   --chip-conf-bg: #25244d; --chip-conf: #bcb8ff;
+  --chip-collab-bg: #3a2810; --chip-collab: #f6c27c; --chip-collab-border: #6a4a1c;
 }
 
 * { box-sizing: border-box; }
@@ -207,6 +210,12 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .v-review { background: var(--chip-rev-bg); color: var(--chip-rev); }
 .v-journal { background: var(--chip-jour-bg); color: var(--chip-jour); }
 .v-conf { background: var(--chip-conf-bg); color: var(--chip-conf); }
+/* who the work was done with: an amber chip beside the venue */
+.collab {
+  display: inline-block; margin-right: 8px; padding: 0 8px; border-radius: 6px;
+  border: 1px solid var(--chip-collab-border); background: var(--chip-collab-bg); color: var(--chip-collab);
+  font-size: 0.76rem; font-weight: 600; letter-spacing: 0.01em; vertical-align: 2px; white-space: nowrap;
+}
 .authors { margin: 0 0 6px; color: var(--muted); font-size: 0.94rem; }
 .authors strong { color: var(--text); }
 .authors a { color: var(--muted); text-decoration: underline dotted; text-underline-offset: 3px; }
@@ -236,12 +245,6 @@ h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 48px; he
 .site-footer { padding-top: 30px; padding-bottom: 40px; color: var(--faint); font-size: 0.85rem; }
 .site-footer > p { margin: 0; padding-top: 16px; border-top: 1px solid var(--border); }
 .site-footer a { color: var(--muted); }
-.visitors { display: flex; justify-content: center; margin: 12px 0 26px; }
-/* the ClustrMaps widget draws at 345 x 270 (the crop the old homepage used);
-   zoom shows it at about 250 x 195, whatever element it draws with */
-.visitors-map { width: 345px; height: 270px; overflow: hidden; border-radius: 12px; zoom: 0.72; }
-/* no empty gap where the visitor map never draws (blocked or offline) */
-.visitors:not(:has(.visitors-map > :not(script))) { display: none; }
 
 /* small screens */
 @media (max-width: 760px) {
